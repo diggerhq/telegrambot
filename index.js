@@ -1,7 +1,7 @@
 import { Telegraf } from 'telegraf';
 import express from 'express';
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Telegraf(process.env.BOT_TOKEN || 'dummy_bot_token');
 const server = express();
 
 // health check
